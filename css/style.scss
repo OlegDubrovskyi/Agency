@@ -1,0 +1,19 @@
+.listStyleNone{
+	list-style-type: none;
+}
+
+.text-decoration{
+	text-decoration: none
+}
+
+.decorationNone{
+	 text-decoration: none;
+}
+
+.home-section{
+	background-image: url(../img/home-section.png);
+	.home-section__menu ul li{
+		float: left;
+		margin-left: 5px;
+	}
+}
