@@ -1,5 +1,19 @@
+$white: #fff;
+$grey: #342f3c;
+$lightGray: #807d87;
+$purple: rgb(117, 61, 157);
+$font-family: 'Montserrat', sans-serif;
+
+.center-block{
+	margin: 0 auto;
+}
+
 .listStyleNone{
 	list-style-type: none;
+}
+
+.middle{
+	position: relative;
 }
 
 .text-decoration{
@@ -10,10 +24,97 @@
 	 text-decoration: none;
 }
 
+.button {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    width: 262px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    display: inline-block;
+    background-color: #342f3c;
+    text-align: center;
+}
+
+.pagination{
+    border-radius: 4px;
+    width: 68px;
+    height: 7px;
+    display: inline-block;
+    background-color: #807d87;
+    margin-right: 8px;
+}
+
+.paginationActive {
+	background-color: $purple;
+}
+
+.button:hover {
+    background-color: $purple;
+    text-decoration: none;
+    color: $purple;
+    border-color: $purple;
+}
+
+.buttonText:hover {
+    color: $white;
+}
+
+.buttonText {
+    text-transform: uppercase;
+	font-size: 18px;
+	font-family: $font-family;
+	color: $white;
+}
+
 .home-section{
 	background-image: url(../img/home-section.png);
+	background-repeat: no-repeat;
+	padding-top: 45px;
+	padding-bottom: 30px;
+	.home-section__menu{
+		position: absolute;
+	    top: 25%;
+	    right: 0%;
+	}
 	.home-section__menu ul li{
 		float: left;
-		margin-left: 5px;
+	}
+	.home-section__menu ul li a{
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: $font-family;
+		color: $white;
+		margin-right: 18px;
+	}
+	
+	.home-section__menu ul li a:hover {
+		color: $purple;
+	}
+
+	h1{
+	  	font-size: 70px;
+	    text-transform: uppercase;
+	    font-family: $font-family;
+	    color: $white;
+	    font-weight: bold;
+	    margin-top: 207px;
+	    line-height: 0.371;
+	    margin-bottom: 50px;
+	}
+	h1 span{
+		color: $purple;
+	}
+
+	.home-section__description {
+	  font-size: 18px;
+	  font-family: $font-family;
+	  color: $white;
+	  margin-bottom: 64px;
+	  width: 80%;
+	}
+
+	.home-section_buttons .button{
+		margin-right: 25px;
+		margin-bottom: 150px;
 	}
 }

@@ -1,5 +1,11 @@
+.center-block {
+  margin: 0 auto; }
+
 .listStyleNone {
   list-style-type: none; }
+
+.middle {
+  position: relative; }
 
 .text-decoration {
   text-decoration: none; }
@@ -7,10 +13,80 @@
 .decorationNone {
   text-decoration: none; }
 
+.button {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 262px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: inline-block;
+  background-color: #342f3c;
+  text-align: center; }
+
+.pagination {
+  border-radius: 4px;
+  width: 68px;
+  height: 7px;
+  display: inline-block;
+  background-color: #807d87;
+  margin-right: 8px; }
+
+.paginationActive {
+  background-color: #753d9d; }
+
+.button:hover {
+  background-color: #753d9d;
+  text-decoration: none;
+  color: #753d9d;
+  border-color: #753d9d; }
+
+.buttonText:hover {
+  color: #fff; }
+
+.buttonText {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff; }
+
 .home-section {
-  background-image: url(../img/home-section.png); }
+  background-image: url(../img/home-section.png);
+  background-repeat: no-repeat;
+  padding-top: 45px;
+  padding-bottom: 30px; }
+  .home-section .home-section__menu {
+    position: absolute;
+    top: 25%;
+    right: 0%; }
   .home-section .home-section__menu ul li {
-    float: left;
-    margin-left: 5px; }
+    float: left; }
+  .home-section .home-section__menu ul li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-right: 18px; }
+  .home-section .home-section__menu ul li a:hover {
+    color: #753d9d; }
+  .home-section h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 207px;
+    line-height: 0.371;
+    margin-bottom: 50px; }
+  .home-section h1 span {
+    color: #753d9d; }
+  .home-section .home-section__description {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-bottom: 64px;
+    width: 80%; }
+  .home-section .home-section_buttons .button {
+    margin-right: 25px;
+    margin-bottom: 150px; }
 
 /*# sourceMappingURL=style.css.map */
