@@ -8,31 +8,58 @@ $font-family: 'Montserrat', sans-serif;
 	margin: 0 auto;
 }
 
-.listStyleNone{
+.list-style-none{
 	list-style-type: none;
 }
 
-.middle{
+.position-relative{
 	position: relative;
 }
 
-.text-decoration{
-	text-decoration: none
+.text-decoration-none{
+	 text-decoration: none;
 }
 
-.decorationNone{
-	 text-decoration: none;
+@mixin responsive-btn-mixin() {
+	border-radius: 3px;
+    width: 170px;
+    padding: 14px 0 14px 0;
+}
+
+.responsive-btn {
+	@include responsive-btn-mixin();
 }
 
 .button {
     border: 1px solid #fff;
     border-radius: 8px;
     width: 262px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding: 23px 0 23px 0;
     display: inline-block;
     background-color: #342f3c;
     text-align: center;
+    &:hover {
+    	background-color: $purple;
+	    text-decoration: none;
+	    color: $purple;
+	    border-color: $purple;	
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+    	@include responsive-btn-mixin();
+    }
+}
+
+.button-text {
+    text-transform: uppercase;
+	font-size: 18px;
+	font-family: $font-family;
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+	@media (min-width: 320px) and (max-width: 767px) {
+    	font-size: 14px;
+    }
 }
 
 .pagination{
@@ -44,65 +71,74 @@ $font-family: 'Montserrat', sans-serif;
     margin-right: 8px;
 }
 
-.paginationActive {
+.pagination-active {
 	background-color: $purple;
 }
 
-.button:hover {
-    background-color: $purple;
-    text-decoration: none;
-    color: $purple;
-    border-color: $purple;
-}
-
-.buttonText:hover {
-    color: $white;
-}
-
-.buttonText {
-    text-transform: uppercase;
-	font-size: 18px;
-	font-family: $font-family;
-	color: $white;
-}
+/* home-section -----------------------------------------------------------------------------------------------------------------------------------*/
 
 .home-section{
-	background-image: url(../img/home-section.png);
-	background-repeat: no-repeat;
-	padding-top: 45px;
-	padding-bottom: 30px;
+	background: url(../img/home-section.png), no-repeat;
+	padding: 45px 0 30px 0;
+	.home-section__logo{
+		@media (min-width: 320px) and (max-width: 767px) {
+			text-align: center;
+			width: 100%;
+		}
+	}
 	.home-section__menu{
 		position: absolute;
 	    top: 25%;
 	    right: 0%;
-	}
-	.home-section__menu ul li{
-		float: left;
-	}
-	.home-section__menu ul li a{
-		text-transform: uppercase;
-		font-size: 15px;
-		font-family: $font-family;
-		color: $white;
-		margin-right: 18px;
+	    @media (min-width: 320px) and (max-width: 767px) {
+			position: relative;
+			margin-top: 25px;
+			width: 100%;
+		}
+	    ul li{
+	    	float: left;
+	    	@media (min-width: 320px) and (max-width: 767px) {
+	    		text-align: center;
+	    		float: none;
+	    	}
+	    }
+	    ul li a {
+			text-transform: uppercase;
+			font-size: 15px;
+			font-family: $font-family;
+			color: $white;
+			margin-right: 18px;
+			&:hover {
+				color: $purple;
+			}
+		}
 	}
 	
-	.home-section__menu ul li a:hover {
-		color: $purple;
-	}
-
 	h1{
 	  	font-size: 70px;
 	    text-transform: uppercase;
 	    font-family: $font-family;
 	    color: $white;
 	    font-weight: bold;
-	    margin-top: 207px;
+	    margin: 207px 0 50px 0;
 	    line-height: 0.371;
-	    margin-bottom: 50px;
-	}
-	h1 span{
-		color: $purple;
+	    @media (min-width: 992px) and (max-width: 1199px) {
+	    	font-size: 60px;
+	    	line-height: 1.1;
+	    }
+	    @media (min-width: 768px) and (max-width: 991px) {
+	    	font-size: 50px;
+			line-height: 1.1;
+			margin: 165px 0 25px 0;
+	    }
+	    @media (min-width: 320px) and (max-width: 767px) {
+			font-size: 36px;
+			line-height: 1.1;
+			margin: 35px 0 25px 0;
+	    }
+	    span {
+	    	color: $purple;
+	    }
 	}
 
 	.home-section__description {
@@ -111,10 +147,22 @@ $font-family: 'Montserrat', sans-serif;
 	  color: $white;
 	  margin-bottom: 64px;
 	  width: 80%;
+	  @media (min-width: 320px) and (max-width: 767px) {
+			margin-bottom: 45px;
+			font-size: 16px;
+		}
+	}
+	
+	.home-section_buttons {
+		@media (min-width: 320px) and (max-width: 767px) {
+			width: 170px;
+		}
 	}
 
 	.home-section_buttons .button{
-		margin-right: 25px;
-		margin-bottom: 150px;
+		margin: 0 25px 150px 0;
+		@media (min-width: 320px) and (max-width: 1199px) {
+			margin-bottom: 35px;
+		}
 	}
 }
