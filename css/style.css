@@ -58,7 +58,8 @@
 
 /* home-section -----------------------------------------------------------------------------------------------------------------------------------*/
 .home-section {
-  background: url(../img/home-section.png), no-repeat;
+  background: url(../img/home-section.png);
+  background-size: cover;
   padding: 45px 0 30px 0; }
   @media (min-width: 320px) and (max-width: 767px) {
     .home-section .home-section__logo {
@@ -129,5 +130,9 @@
     @media (min-width: 320px) and (max-width: 1199px) {
       .home-section .home-section_buttons .button {
         margin-bottom: 35px; } }
+
+.slogan {
+  background: url(../img/slogan-backgrond.png);
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

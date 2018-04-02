@@ -78,7 +78,8 @@ $font-family: 'Montserrat', sans-serif;
 /* home-section -----------------------------------------------------------------------------------------------------------------------------------*/
 
 .home-section{
-	background: url(../img/home-section.png), no-repeat;
+	background: url(../img/home-section.png);
+	background-size: cover; 
 	padding: 45px 0 30px 0;
 	.home-section__logo{
 		@media (min-width: 320px) and (max-width: 767px) {
@@ -165,4 +166,9 @@ $font-family: 'Montserrat', sans-serif;
 			margin-bottom: 35px;
 		}
 	}
+}
+
+.slogan {
+	background: url(../img/slogan-backgrond.png);
+	background-size: cover; 
 }
