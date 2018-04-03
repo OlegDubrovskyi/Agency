@@ -1,4 +1,5 @@
 $white: #fff;
+$black: #000000;
 $grey: #342f3c;
 $lightGray: #807d87;
 $purple: rgb(117, 61, 157);
@@ -6,6 +7,14 @@ $font-family: 'Montserrat', sans-serif;
 
 .center-block{
 	margin: 0 auto;
+}
+
+.disable {
+	display: none; 
+}
+
+.active{
+	display: block; 
 }
 
 .list-style-none{
@@ -20,42 +29,58 @@ $font-family: 'Montserrat', sans-serif;
 	 text-decoration: none;
 }
 
-@mixin responsive-btn-mixin() {
-	border-radius: 3px;
-    width: 170px;
-    padding: 14px 0 14px 0;
-}
-
-.responsive-btn {
-	@include responsive-btn-mixin();
-}
-
 .button {
-    border: 1px solid #fff;
     border-radius: 8px;
-    width: 262px;
-    padding: 23px 0 23px 0;
+    max-width: 262px;
+    padding: 23px 65px 23px 65px;
     display: inline-block;
-    background-color: #342f3c;
     text-align: center;
-    &:hover {
+    &--white-bg {
+    	border: 1px solid $black;
+    	background-color: $white;
+    	&:hover {
     	background-color: $purple;
 	    text-decoration: none;
 	    color: $purple;
 	    border-color: $purple;	
+    	}
+    }
+	&--purple-bg {
+		border: 1px solid $white;
+    	background-color: $purple;
+    }
+    &--grey-bg {
+    	border: 1px solid $white;
+    	background-color: $grey;
+    	&:hover {
+    	background-color: $purple;
+	    text-decoration: none;
+	    color: $purple;
+	    border-color: $purple;	
+    	}
     }
     @media (min-width: 320px) and (max-width: 767px) {
-    	@include responsive-btn-mixin();
+    	border-radius: 3px;
+	    max-width: 170px;
+	    padding: 14px 20px 14px 20px;
     }
 }
 
-.button-text {
+.btn-text {
     text-transform: uppercase;
 	font-size: 18px;
 	font-family: $font-family;
-	color: $white;
-	&:hover {
+	&--black {
+		color: $black;
+		&:hover {
+		color: $black;
+		}
+	}
+	&--white {
 		color: $white;
+		&:hover {
+		color: $white;
+		}
 	}
 	@media (min-width: 320px) and (max-width: 767px) {
     	font-size: 14px;
@@ -101,6 +126,7 @@ $font-family: 'Montserrat', sans-serif;
 	    	@media (min-width: 320px) and (max-width: 767px) {
 	    		text-align: center;
 	    		float: none;
+	    		display: none; 
 	    	}
 	    }
 	    ul li a {
@@ -113,6 +139,11 @@ $font-family: 'Montserrat', sans-serif;
 				color: $purple;
 			}
 		}
+		.home-section__menu__hamburger {
+			@media (min-width: 320px) and (max-width: 767px) {
+				display: block; 
+			}
+		}
 	}
 	
 	h1{
@@ -123,6 +154,7 @@ $font-family: 'Montserrat', sans-serif;
 	    font-weight: bold;
 	    margin: 207px 0 50px 0;
 	    line-height: 0.371;
+	    padding: 0 25px 0 25px;
 	    @media (min-width: 992px) and (max-width: 1199px) {
 	    	font-size: 60px;
 	    	line-height: 1.1;
