@@ -1,11 +1,20 @@
 .center-block {
   margin: 0 auto; }
 
+.bg-img-0 {
+  background: url(../img/home-section.png); }
+
+.bg-img-1 {
+  background: url(../img/macBook.png); }
+
+.bg-img-2 {
+  background: url(../img/features_create.png); }
+
 .disable {
   display: none; }
 
 .active {
-  display: block; }
+  display: block !important; }
 
 .list-style-none {
   list-style-type: none; }
@@ -76,13 +85,17 @@
 
 /* home-section -----------------------------------------------------------------------------------------------------------------------------------*/
 .home-section {
-  background: url(../img/home-section.png);
-  background-size: cover;
-  padding: 45px 0 30px 0; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .home-section .home-section__logo {
-      text-align: center;
-      width: 100%; } }
+  padding: 45px 0 30px 0;
+  /* background: url(../img/home-section.png); */
+  background-size: cover; }
+  .home-section .home-section__logo {
+    margin-left: 20px; }
+  .home-section .home-section__menu__hamburger {
+    margin-right: 20px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .home-section .home-section__menu__hamburger {
+        display: block !important;
+        float: right; } }
   .home-section .home-section__menu {
     position: absolute;
     top: 25%;
@@ -107,9 +120,6 @@
       margin-right: 18px; }
       .home-section .home-section__menu ul li a:hover {
         color: #753d9d; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .home-section .home-section__menu .home-section__menu__hamburger {
-        display: block; } }
   .home-section h1 {
     font-size: 70px;
     text-transform: uppercase;

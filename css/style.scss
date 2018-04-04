@@ -9,12 +9,24 @@ $font-family: 'Montserrat', sans-serif;
 	margin: 0 auto;
 }
 
+.bg-img-0 {
+	background: url(../img/home-section.png);
+}
+
+.bg-img-1 {
+	background: url(../img/macBook.png);
+}
+
+.bg-img-2 {
+	background: url(../img/features_create.png);
+}
+
 .disable {
 	display: none; 
 }
 
 .active{
-	display: block; 
+	display: block!important; 
 }
 
 .list-style-none{
@@ -103,15 +115,20 @@ $font-family: 'Montserrat', sans-serif;
 /* home-section -----------------------------------------------------------------------------------------------------------------------------------*/
 
 .home-section{
-	background: url(../img/home-section.png);
-	background-size: cover; 
 	padding: 45px 0 30px 0;
+	/* background: url(../img/home-section.png); */
+	background-size: cover; 
+		
 	.home-section__logo{
-		@media (min-width: 320px) and (max-width: 767px) {
-			text-align: center;
-			width: 100%;
-		}
+		margin-left: 20px;
 	}
+	.home-section__menu__hamburger {
+		margin-right: 20px;
+			@media (min-width: 320px) and (max-width: 767px) {
+				display: block!important;
+				float: right;
+			}
+		}
 	.home-section__menu{
 		position: absolute;
 	    top: 25%;
@@ -137,11 +154,6 @@ $font-family: 'Montserrat', sans-serif;
 			margin-right: 18px;
 			&:hover {
 				color: $purple;
-			}
-		}
-		.home-section__menu__hamburger {
-			@media (min-width: 320px) and (max-width: 767px) {
-				display: block; 
 			}
 		}
 	}
