@@ -2,11 +2,23 @@ $white: #fff;
 $black: #000000;
 $grey: #342f3c;
 $lightGray: #807d87;
+$extraLightGray: #e0e0e0;
 $purple: rgb(117, 61, 157);
 $font-family: 'Montserrat', sans-serif;
 
 .center-block{
 	margin: 0 auto;
+}
+
+.custom-padding {
+	padding: 0 15px 0 15px;
+}
+
+.border-line {
+	width: 100%;
+	height: 2px;
+	background-color: $extraLightGray;
+	margin: 72px 0 72px 0;
 }
 
 .bg-img-0 {
@@ -48,7 +60,7 @@ $font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-align: center;
     &--white-bg {
-    	border: 1px solid $black;
+    	border: 2px solid $black;
     	background-color: $white;
     	&:hover {
     	background-color: $purple;
@@ -58,11 +70,11 @@ $font-family: 'Montserrat', sans-serif;
     	}
     }
 	&--purple-bg {
-		border: 1px solid $white;
+		border: 2px solid $white;
     	background-color: $purple;
     }
     &--grey-bg {
-    	border: 1px solid $white;
+    	border: 2px solid $white;
     	background-color: $grey;
     	&:hover {
     	background-color: $purple;
@@ -116,7 +128,6 @@ $font-family: 'Montserrat', sans-serif;
 
 .home-section{
 	padding: 45px 0 30px 0;
-	/* background: url(../img/home-section.png); */
 	background-size: cover; 
 		
 	.home-section__logo{
@@ -127,6 +138,9 @@ $font-family: 'Montserrat', sans-serif;
 			@media (min-width: 320px) and (max-width: 767px) {
 				display: block!important;
 				float: right;
+				position: absolute;
+			    top: 0%;
+			    right: 0%;
 			}
 		}
 	.home-section__menu{
@@ -157,7 +171,10 @@ $font-family: 'Montserrat', sans-serif;
 			}
 		}
 	}
-	
+	.home-section__content {
+		 width: 100%;
+	}
+
 	h1{
 	  	font-size: 70px;
 	    text-transform: uppercase;
@@ -199,6 +216,7 @@ $font-family: 'Montserrat', sans-serif;
 	}
 	
 	.home-section_buttons {
+		width: 100%;
 		@media (min-width: 320px) and (max-width: 767px) {
 			width: 170px;
 		}
@@ -210,9 +228,123 @@ $font-family: 'Montserrat', sans-serif;
 			margin-bottom: 35px;
 		}
 	}
+	.bg-slider {
+		width: 100%;
+	}
 }
+
+/* welcome -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.welcome {
+	background-color: $white;
+	padding: 70px 0 70px 0;
+	.caption {
+		width: 6px;
+	    height: 85px;
+	    background-color: $purple;
+	    border-radius: 9px;
+	    float: left;
+	    margin-right: 15px;
+	}
+
+	.welcome__title {
+		width: 80%;
+	}
+	h2{	
+	 	font-size: 36px;
+		font-family: $font-family;
+		color: $black;
+		font-weight: bold;
+		line-height: 1.222;
+		text-transform: uppercase;
+    }
+
+    h2 span:nth-of-type(1){
+    	color: $purple;
+    }
+
+    h2 span:nth-of-type(2){
+    	font-weight: 400;
+    }
+
+    .welcome_description {
+		margin-top: 53px;
+		margin-bottom: 53px;
+		font-family: $font-family;
+		color: $black;
+		line-height: 1.733;
+    }
+    .welcome_image {
+		@media (min-width: 320px) and (max-width: 991px) {
+			margin-top: 40px;
+			margin: 0 auto;
+			text-align: center;
+		}
+    }
+
+    .welcome_image img {
+    	border-radius: 6px;
+  
+    }
+
+    .welcome__image__title{
+    	text-transform: uppercase;
+    	margin-left: 80px;
+    	margin-top: 20px;
+		font-size: 21px;
+		font-family: $font-family;
+		color: $black;
+		font-weight: bold;
+		line-height: 1.238;
+    }
+	
+	.welcome__icon {
+		@media (min-width: 320px) and (max-width: 991px) {
+			margin: 0 auto;
+		}
+	}
+    .welcome__icon img{
+    	float: left;
+    	margin-bottom: 30px;
+    }
+
+    .welcome__image__description {
+		font-size: 15px;
+		font-family: $font-family;
+		color: $black;
+		line-height: 1.733;
+		margin-top: 52px;
+		@media (min-width: 320px) and (max-width: 1025px) {
+			margin-bottom: 40px;
+		}
+    }
+}
+
+/* slogan -----------------------------------------------------------------------------------------------------------------------------------*/
 
 .slogan {
 	background: url(../img/slogan-backgrond.png);
-	background-size: cover; 
+	background-size: cover;
+	padding: 102px 0 102px 0;
+	h3 {
+	  font-size: 50px;
+	  font-family: $font-family;
+	  color: $white;
+	  font-weight: bold;
+	  line-height: 0.52;
+	  margin-bottom: 75px;
+	  pagination: 0 30px 0 30px;
+	  @media (min-width: 992px) and (max-width: 1199px) {
+	    	font-size: 42px;
+	    	line-height: 1.1;
+	    }
+	    @media (min-width: 768px) and (max-width: 991px) {
+	    	font-size: 38px;
+			line-height: 1.1;
+	    }
+	    @media (min-width: 320px) and (max-width: 767px) {
+			font-size: 30px;
+			line-height: 1.1;
+	    }
+	}
 }
