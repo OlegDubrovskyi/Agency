@@ -92,13 +92,17 @@ $font-family: 'Montserrat', sans-serif;
     	&:hover {
     	background-color: $purple;
 	    text-decoration: none;
-	    color: $purple;
 	    border-color: $purple;	
     	}
     }
 	&--purple-bg {
 		border: 2px solid $white;
     	background-color: $purple;
+    	&:hover {
+    	background-color: $white;
+	    text-decoration: none;
+	    border-color: $white;	
+    	}
     }
     &--grey-bg {
     	border: 2px solid $white;
@@ -106,7 +110,6 @@ $font-family: 'Montserrat', sans-serif;
     	&:hover {
     	background-color: $purple;
 	    text-decoration: none;
-	    color: $purple;
 	    border-color: $purple;	
     	}
     }
@@ -131,6 +134,12 @@ $font-family: 'Montserrat', sans-serif;
 		color: $white;
 		&:hover {
 		color: $white;
+		}
+	}
+	&--purple {
+		color: $white;
+		&:hover {
+		color: $purple;
 		}
 	}
 	@media (min-width: 320px) and (max-width: 767px) {
@@ -379,7 +388,7 @@ $font-family: 'Montserrat', sans-serif;
 
 .services {
 	background-color: $white;
-	padding: 70px 0 70px 0;
+	padding: 70px 0 0 0;
 	.services__img_fst_row .img {
 		float: left;
 		padding: 15px;
@@ -398,5 +407,40 @@ $font-family: 'Montserrat', sans-serif;
     	bottom: 0;
     	left: 0;
     	right: 0;
+		font-size: 17px;
+		font-family: $font-family;
+		color: $white;
+		font-weight: bold;
+		line-height: 1.529;
+	}
+	.services__img_content_last{
+		text-transform: uppercase;
+		font-size: 22px;
+		font-family: $font-family;
+		color: $white;
+		font-weight: bold;
+		line-height: 1.182;
+		position: absolute;
+		bottom: 0;
+    	left: 0;
+    	right: 0;
+    	padding: 0 49px 65px 239px;
+
 	}
 }
+
+/* contact -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.contact{
+	background-color: $purple;
+	padding: 50px 0 50px 0;
+	.contact__title{
+	  font-size: 25px;
+	  font-family: $font-family;
+	  color: $white;;
+	  font-weight: bold;
+	  line-height: 1.4;
+	  padding: 20px 0 20px 0;
+	}
+}
+

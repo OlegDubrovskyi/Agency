@@ -70,18 +70,20 @@
     .button--white-bg:hover {
       background-color: #753d9d;
       text-decoration: none;
-      color: #753d9d;
       border-color: #753d9d; }
   .button--purple-bg {
     border: 2px solid #fff;
     background-color: #753d9d; }
+    .button--purple-bg:hover {
+      background-color: #fff;
+      text-decoration: none;
+      border-color: #fff; }
   .button--grey-bg {
     border: 2px solid #fff;
     background-color: #342f3c; }
     .button--grey-bg:hover {
       background-color: #753d9d;
       text-decoration: none;
-      color: #753d9d;
       border-color: #753d9d; }
   @media (min-width: 320px) and (max-width: 767px) {
     .button {
@@ -101,6 +103,10 @@
     color: #fff; }
     .btn-text--white:hover {
       color: #fff; }
+  .btn-text--purple {
+    color: #fff; }
+    .btn-text--purple:hover {
+      color: #753d9d; }
   @media (min-width: 320px) and (max-width: 767px) {
     .btn-text {
       font-size: 14px; } }
@@ -295,7 +301,7 @@
 /* services -----------------------------------------------------------------------------------------------------------------------------------*/
 .services {
   background-color: #fff;
-  padding: 70px 0 70px 0; }
+  padding: 70px 0 0 0; }
   .services .services__img_fst_row .img {
     float: left;
     padding: 15px;
@@ -309,6 +315,35 @@
     padding: 0 20px 30px 40px;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.529; }
+  .services .services__img_content_last {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.182;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 49px 65px 239px; }
+
+/* contact -----------------------------------------------------------------------------------------------------------------------------------*/
+.contact {
+  background-color: #753d9d;
+  padding: 50px 0 50px 0; }
+  .contact .contact__title {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 20px 0 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
