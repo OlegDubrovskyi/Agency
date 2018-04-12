@@ -8,6 +8,8 @@ $(document).ready(function(){
 	$('.home-section__menu__hamburger').on('click',  function(e){
 		e.preventDefault();
 		$('.nav').toggleClass('active');
+		$('.home-section__menu').toggleClass('menu-show');
+
 		});
 	$('.pagination').on('click',  function(e){
 		$('.bg-slider .pagination:nth-child(' + counter +')').removeClass('pagination-active');

@@ -1,6 +1,30 @@
 .center-block {
   margin: 0 auto; }
 
+.bg-grey {
+  background-color: #342f3c; }
+
+.caption {
+  width: 6px;
+  height: 85px;
+  background-color: #753d9d;
+  border-radius: 9px;
+  float: left;
+  margin-right: 15px; }
+
+.menu-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  max-height: 100vh;
+  width: 100%;
+  background-color: #342f3c;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms; }
+
 .custom-padding {
   padding: 0 15px 0 15px; }
 
@@ -113,6 +137,9 @@
     right: 0%; }
     @media (min-width: 320px) and (max-width: 767px) {
       .home-section .home-section__menu {
+        transition: all 0ms ease; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .home-section .home-section__menu {
         position: relative;
         margin-top: 25px;
         width: 100%; } }
@@ -131,6 +158,9 @@
       margin-right: 18px; }
       .home-section .home-section__menu ul li a:hover {
         color: #753d9d; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .home-section .home-section__menu ul li a {
+          transition: 1s; } }
   .home-section .home-section__content {
     width: 100%; }
   .home-section h1 {
@@ -185,13 +215,6 @@
 .welcome {
   background-color: #fff;
   padding: 70px 0 70px 0; }
-  .welcome .caption {
-    width: 6px;
-    height: 85px;
-    background-color: #753d9d;
-    border-radius: 9px;
-    float: left;
-    margin-right: 15px; }
   .welcome .welcome__title {
     width: 80%; }
   .welcome h2 {
@@ -268,5 +291,24 @@
       .slogan h3 {
         font-size: 30px;
         line-height: 1.1; } }
+
+/* services -----------------------------------------------------------------------------------------------------------------------------------*/
+.services {
+  background-color: #fff;
+  padding: 70px 0 70px 0; }
+  .services .services__img_fst_row .img {
+    float: left;
+    padding: 15px;
+    width: 292px; }
+  .services .services__img_sec_row .img {
+    float: left;
+    padding: 15px; }
+  .services .services__img_content {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 0 20px 30px 40px;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 /*# sourceMappingURL=style.css.map */
