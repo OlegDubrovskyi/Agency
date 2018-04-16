@@ -6,11 +6,12 @@
 
 .caption {
   width: 6px;
-  height: 85px;
+  height: auto;
   background-color: #753d9d;
   border-radius: 9px;
   float: left;
-  margin-right: 15px; }
+  /* margin-right: 15px; */
+  margin: 4px 15px 4px 0; }
 
 .menu-show {
   position: fixed;
@@ -353,5 +354,12 @@
   .portfolio .portfolio__img div {
     float: left;
     padding: 10px; }
+  .portfolio .services__title {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1; }
 
 /*# sourceMappingURL=style.css.map */
