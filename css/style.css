@@ -346,4 +346,12 @@
     line-height: 1.4;
     padding: 20px 0 20px 0; }
 
+/* portfolio -----------------------------------------------------------------------------------------------------------------------------------*/
+.portfolio {
+  background-color: #fff;
+  padding: 50px 0 50px 0; }
+  .portfolio .portfolio__img div {
+    float: left;
+    padding: 10px; }
+
 /*# sourceMappingURL=style.css.map */
