@@ -6,12 +6,11 @@
 
 .caption {
   width: 6px;
-  height: auto;
+  height: 85px;
   background-color: #753d9d;
   border-radius: 9px;
   float: left;
-  /* margin-right: 15px; */
-  margin: 4px 15px 4px 0; }
+  margin-right: 15px; }
 
 .menu-show {
   position: fixed;
