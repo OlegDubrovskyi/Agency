@@ -6,11 +6,12 @@
 
 .caption {
   width: 6px;
-  height: 85px;
+  height: 38px;
   background-color: #753d9d;
   border-radius: 9px;
   float: left;
-  margin-right: 15px; }
+  margin-right: 15px;
+  /* margin-left: 29px; */ }
 
 .menu-show {
   position: fixed;
@@ -27,6 +28,15 @@
 
 .custom-padding {
   padding: 0 15px 0 15px; }
+
+.section__title {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 5px; }
 
 .border-line {
   width: 100%;
@@ -221,6 +231,8 @@
 .welcome {
   background-color: #fff;
   padding: 70px 0 70px 0; }
+  .welcome .caption {
+    height: 86px; }
   .welcome .welcome__title {
     width: 80%; }
   .welcome h2 {
@@ -333,6 +345,20 @@
     left: 0;
     right: 0;
     padding: 0 49px 65px 239px; }
+  .services .services__support_title {
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    line-height: 0.788; }
+  .services .services__support_description {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    line-height: 1.733;
+    margin: 30px 0 20px 0; }
+  .services .services__support_items ul li {
+    margin-top: 15px; }
 
 /* contact -----------------------------------------------------------------------------------------------------------------------------------*/
 .contact {
@@ -353,12 +379,13 @@
   .portfolio .portfolio__img div {
     float: left;
     padding: 10px; }
-  .portfolio .services__title {
+  .portfolio .section__title {
     text-transform: uppercase;
     font-size: 26px;
     font-family: "Montserrat", sans-serif;
     color: #000000;
     font-weight: bold;
-    line-height: 1; }
+    line-height: 1;
+    padding-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */
