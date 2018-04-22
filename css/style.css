@@ -4,14 +4,22 @@
 .bg-grey {
   background-color: #342f3c; }
 
+.inputBorder {
+  border-radius: 7px;
+  height: 67px;
+  background-color: #753d9d;
+  border: 3px solid #d3b1eb; }
+
 .caption {
   width: 6px;
   height: 38px;
   background-color: #753d9d;
   border-radius: 9px;
   float: left;
-  margin-right: 15px;
-  /* margin-left: 29px; */ }
+  margin-right: 15px; }
+
+.content-wrap {
+  width: 1170px; }
 
 .menu-show {
   position: fixed;
@@ -36,13 +44,13 @@
   color: #000000;
   font-weight: bold;
   line-height: 1;
-  padding-top: 5px; }
+  padding-top: 5px;
+  width: 100%; }
 
 .border-line {
   width: 100%;
   height: 2px;
-  background-color: #e0e0e0;
-  margin: 72px 0 72px 0; }
+  background-color: #e0e0e0; }
 
 .bg-img-0 {
   background: url(../img/home-section.png); }
@@ -272,7 +280,7 @@
     .welcome .welcome__icon {
       margin: 0 auto; } }
   .welcome .welcome__icon img {
-    float: left;
+    /* float: left; */
     margin-bottom: 30px; }
   .welcome .welcome__image__description {
     font-size: 15px;
@@ -283,6 +291,8 @@
     @media (min-width: 320px) and (max-width: 1025px) {
       .welcome .welcome__image__description {
         margin-bottom: 40px; } }
+  .welcome .border-line {
+    margin: 70px 0 70px 0; }
 
 /* slogan -----------------------------------------------------------------------------------------------------------------------------------*/
 .slogan {
@@ -314,13 +324,10 @@
 .services {
   background-color: #fff;
   padding: 70px 0 0 0; }
-  .services .services__img_fst_row .img {
-    float: left;
-    padding: 15px;
-    width: 292px; }
-  .services .services__img_sec_row .img {
-    float: left;
-    padding: 15px; }
+  .services img {
+    margin-bottom: 15px; }
+  .services .img_width {
+    width: 630px; }
   .services .services__img_content {
     text-transform: uppercase;
     position: absolute;
@@ -359,6 +366,10 @@
     margin: 30px 0 20px 0; }
   .services .services__support_items ul li {
     margin-top: 15px; }
+  .services .border-line {
+    margin: 73px 0 73px 0; }
+  .services .caption {
+    margin-bottom: 50px; }
 
 /* contact -----------------------------------------------------------------------------------------------------------------------------------*/
 .contact {
@@ -370,15 +381,18 @@
     color: #fff;
     font-weight: bold;
     line-height: 1.4;
-    padding: 20px 0 20px 0; }
+    padding: 20px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .contact .contact__title {
+        font-size: 18px; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .contact .button {
+      margin: 0 auto; } }
 
 /* portfolio -----------------------------------------------------------------------------------------------------------------------------------*/
 .portfolio {
   background-color: #fff;
   padding: 50px 0 50px 0; }
-  .portfolio .portfolio__img div {
-    float: left;
-    padding: 10px; }
   .portfolio .section__title {
     text-transform: uppercase;
     font-size: 26px;
@@ -387,5 +401,99 @@
     font-weight: bold;
     line-height: 1;
     padding-top: 5px; }
+  .portfolio .section__title {
+    margin-bottom: 48px; }
+  .portfolio .portfolio__title {
+    margin-top: 78px;
+    margin-bottom: 36px; }
+  .portfolio .portfolio__blog_title {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #753d9d;
+    font-weight: bold;
+    line-height: 1.444; }
+  .portfolio .portfolio__blog_desc {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #e0e0e0;
+    line-height: 1.625; }
+  .portfolio .portfolio__blog_author {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    line-height: 1.733; }
+    .portfolio .portfolio__blog_author span {
+      color: #e0e0e0; }
+  .portfolio .border-line {
+    margin: 40px 0 40px 0; }
+
+/* newsletter -----------------------------------------------------------------------------------------------------------------------------------*/
+.newsletter {
+  background-color: #0d113d;
+  padding-bottom: 40px; }
+  .newsletter .newsletter__register {
+    background-color: #753d9d;
+    padding: 34px 20px 34px 25px;
+    margin-bottom: 80px;
+    border-radius: 0 0 6px 6px; }
+    .newsletter .newsletter__register .newsletter__title {
+      text-transform: uppercase;
+      font-size: 21px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.238; }
+      @media (min-width: 320px) and (max-width: 900px) {
+        .newsletter .newsletter__register .newsletter__title {
+          font-size: 18px;
+          text-align: center; } }
+    .newsletter .newsletter__register .newsletter__subtitle {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      line-height: 1.733; }
+      @media (min-width: 320px) and (max-width: 900px) {
+        .newsletter .newsletter__register .newsletter__subtitle {
+          font-size: 13px;
+          text-align: center; } }
+  .newsletter .newsletter__description {
+    margin-top: 45px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    line-height: 1.733;
+    margin-bottom: 75px; }
+  .newsletter .newsletter__copright {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    line-height: 2.6; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .newsletter .newsletter__copright {
+        font-size: 10px; } }
+  .newsletter .newsletter__social div {
+    float: left;
+    margin-left: 18px; }
+  .newsletter .newsletter__menu ul li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-right: 18px;
+    line-height: 2.8; }
+    .newsletter .newsletter__menu ul li a:hover {
+      color: #753d9d; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .newsletter .newsletter__menu ul li a {
+        font-size: 10px; } }
+  .newsletter .border-line {
+    background-color: #1e224d;
+    margin-bottom: 34px; }
+  @media (min-width: 320px) and (max-width: 900px) {
+    .newsletter .newsletter__logo {
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 900px) {
+    .newsletter .button {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
