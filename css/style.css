@@ -280,7 +280,7 @@
     .welcome .welcome__icon {
       margin: 0 auto; } }
   .welcome .welcome__icon img {
-    /* float: left; */
+    float: left;
     margin-bottom: 30px; }
   .welcome .welcome__image__description {
     font-size: 15px;
@@ -323,11 +323,12 @@
 /* services -----------------------------------------------------------------------------------------------------------------------------------*/
 .services {
   background-color: #fff;
-  padding: 70px 0 0 0; }
+  padding: 70px 0 0 0;
+  /* .img_width{
+  	width: 630px;
+  } */ }
   .services img {
     margin-bottom: 15px; }
-  .services .img_width {
-    width: 630px; }
   .services .services__img_content {
     text-transform: uppercase;
     position: absolute;

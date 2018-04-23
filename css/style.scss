@@ -364,7 +364,7 @@ $font-family: 'Montserrat', sans-serif;
 		}
 	}
     .welcome__icon img{
-    	/* float: left; */
+    	float: left;
     	margin-bottom: 30px;
     }
 
@@ -423,9 +423,9 @@ $font-family: 'Montserrat', sans-serif;
 		margin-bottom: 15px;
 	}
 
-	.img_width{
+	/* .img_width{
 		width: 630px;
-	}
+	} */
 
 	.services__img_content {
 		text-transform: uppercase;
