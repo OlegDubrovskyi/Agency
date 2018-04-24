@@ -293,6 +293,9 @@
         margin-bottom: 40px; } }
   .welcome .border-line {
     margin: 70px 0 70px 0; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .welcome .button {
+      text-align: center; } }
 
 /* slogan -----------------------------------------------------------------------------------------------------------------------------------*/
 .slogan {
