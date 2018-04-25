@@ -314,6 +314,7 @@ $font-family: 'Montserrat', sans-serif;
 	.welcome__title {
 		width: 80%;
 	}
+
 	h2{	
 	 	font-size: 36px;
 		font-family: $font-family;
@@ -525,9 +526,10 @@ $font-family: 'Montserrat', sans-serif;
 	  padding: 20px;
 	  @media (min-width: 320px) and (max-width: 767px) {
 			font-size: 18px;
+			text-align: center;
 	  }
 	}
-	.button{
+	.btn{
 		@media (min-width: 320px) and (max-width: 767px) {
 			margin: 0 auto;
 	  }
@@ -628,6 +630,9 @@ $font-family: 'Montserrat', sans-serif;
 				font-size: 13px;
 				text-align: center;
 	    	}
+	    	 @media (min-width: 320px) and (max-width: 1024px) {
+				margin-bottom: 10px;
+	      	}	
 		}
 	}
 	.newsletter__description{
@@ -677,8 +682,13 @@ $font-family: 'Montserrat', sans-serif;
 	    }
 	}
 
-	.button{
-		@media (min-width: 320px) and (max-width: 900px) {
+	.btn{
+		@media (min-width: 320px) and (max-width: 1099px) {
+			margin: 0 auto;
+	    }
+	}
+	.inpt{
+		@media (min-width: 320px) and (max-width: 837px) {
 			margin: 0 auto;
 	    }
 	}

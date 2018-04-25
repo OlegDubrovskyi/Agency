@@ -409,9 +409,10 @@
     padding: 20px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .contact .contact__title {
-        font-size: 18px; } }
+        font-size: 18px;
+        text-align: center; } }
   @media (min-width: 320px) and (max-width: 767px) {
-    .contact .button {
+    .contact .btn {
       margin: 0 auto; } }
 
 /* portfolio -----------------------------------------------------------------------------------------------------------------------------------*/
@@ -485,6 +486,9 @@
         .newsletter .newsletter__register .newsletter__subtitle {
           font-size: 13px;
           text-align: center; } }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .newsletter .newsletter__register .newsletter__subtitle {
+          margin-bottom: 10px; } }
   .newsletter .newsletter__description {
     margin-top: 45px;
     font-size: 15px;
@@ -521,8 +525,11 @@
   @media (min-width: 320px) and (max-width: 900px) {
     .newsletter .newsletter__logo {
       text-align: center; } }
-  @media (min-width: 320px) and (max-width: 900px) {
-    .newsletter .button {
+  @media (min-width: 320px) and (max-width: 1099px) {
+    .newsletter .btn {
+      margin: 0 auto; } }
+  @media (min-width: 320px) and (max-width: 837px) {
+    .newsletter .inpt {
       margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
